@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function AjouterSouvenir() {
   const [formulaire, setFormulaire] = useState({
