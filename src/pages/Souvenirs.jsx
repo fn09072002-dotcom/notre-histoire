@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const BASE_URL = "http://localhost:8002/";
+const API_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = `${API_URL}/`;
 
 function Souvenirs() {
   const [souvenirs, setSouvenirs] = useState([]);
@@ -19,7 +20,7 @@ function Souvenirs() {
 
     try {
       const reponse = await fetch(
-        "http://localhost:8002/api/souvenirs/list.php"
+        `${API_URL}/api/souvenirs/list.php`
       );
 
       const resultat = await reponse.json();

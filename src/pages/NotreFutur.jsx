@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const TYPES = [
   { valeur: "voyage", label: "🌍 Voyage" },
   { valeur: "objectif", label: "🎯 Objectif" },
@@ -27,7 +29,7 @@ function NotreFutur() {
 
     try {
       const reponse = await fetch(
-        "http://localhost:8002/api/futur/list.php"
+        `${API_URL}/api/futur/list.php`
       );
 
       const resultat = await reponse.json();
@@ -56,7 +58,7 @@ function NotreFutur() {
 
     try {
       const reponse = await fetch(
-        "http://localhost:8002/api/futur/create.php",
+        `${API_URL}/api/futur/create.php`,
         {
           method: "POST",
           headers: {
@@ -95,7 +97,7 @@ function NotreFutur() {
     );
 
     try {
-      await fetch("http://localhost:8002/api/futur/toggle.php", {
+      await fetch(`${API_URL}/api/futur/toggle.php`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -112,7 +114,7 @@ function NotreFutur() {
   async function supprimerProjet(id) {
     try {
       const reponse = await fetch(
-        "http://localhost:8002/api/futur/delete.php",
+        `${API_URL}/api/futur/delete.php`,
         {
           method: "POST",
           headers: {

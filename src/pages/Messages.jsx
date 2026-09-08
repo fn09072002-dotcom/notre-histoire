@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 const AUTEURS = ["Fatou", "Abdou"];
 
 function Messages() {
@@ -21,7 +23,7 @@ function Messages() {
 
     try {
       const reponse = await fetch(
-        "http://localhost:8002/api/messages/list.php"
+        `${API_URL}/api/messages/list.php`
       );
 
       const resultat = await reponse.json();
@@ -50,7 +52,7 @@ function Messages() {
 
     try {
       const reponse = await fetch(
-        "http://localhost:8002/api/messages/create.php",
+        `${API_URL}/api/messages/create.php`,
         {
           method: "POST",
           headers: {
@@ -79,7 +81,7 @@ function Messages() {
   async function supprimerMessage(id) {
     try {
       const reponse = await fetch(
-        "http://localhost:8002/api/messages/delete.php",
+        `${API_URL}/api/messages/delete.php`,
         {
           method: "POST",
           headers: {

@@ -82,7 +82,7 @@ function AjouterSouvenir() {
 
     try {
       const reponse = await fetch(
-        "http://localhost:8002/api/souvenirs/create-with-photos.php",
+        `${API_URL}/api/souvenirs/create-with-photos.php`,
         {
           method: "POST",
           body: donnees,
