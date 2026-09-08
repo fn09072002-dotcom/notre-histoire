@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "date": "2024-12-14",
+    "titre": "Notre connaissance",
+    "type": "rencontre",
+    "icone": "💕",
+    "description": "Le jour où notre histoire a commencé.",
+    "lieu": "",
+    "photos": [],
+    "videos": [],
+    "musique": "",
+    "favori": true
+  },
+  {
+    "id": 2,
+    "date": "2025-10-04",
+    "titre": "Notre mariage",
+    "type": "mariage",
+    "icone": "💍",
+    "description": "Le jour où nous sommes devenus mari et femme.",
+    "lieu": "",
+    "photos": [],
+    "videos": [],
+    "musique": "",
+    "favori": true
+  },
+  {
+    "id": 3,
+    "date": "2025-07-09",
+    "titre": "Anniversaire de Fatou",
+    "type": "anniversaire",
+    "icone": "🌸",
+    "description": "L'anniversaire de Fatou.",
+    "lieu": "",
+    "photos": [],
+    "videos": [],
+    "musique": "",
+    "favori": false
+  },
+  {
+    "id": 4,
+    "date": "2025-09-23",
+    "titre": "Anniversaire d'Abdou",
+    "type": "anniversaire",
+    "icone": "🎂",
+    "description": "L'anniversaire d'Abdou.",
+    "lieu": "",
+    "photos": [],
+    "videos": [],
+    "musique": "",
+    "favori": false
+  }
+]
